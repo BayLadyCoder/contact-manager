@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Consumer } from "../context";
+import { Consumer } from "../../context";
 
 class Contact extends Component {
   state = {
@@ -10,7 +10,6 @@ class Contact extends Component {
   onShowClick = () => {
     // toggle state (true/false) when user click
     this.setState({ showContactInfo: !this.state.showContactInfo });
-    console.log(this.state);
   };
 
   onDeleteClick = (id, dispatch) => {
