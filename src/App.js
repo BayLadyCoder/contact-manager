@@ -9,6 +9,7 @@ import AddContact from "./components/contacts/AddContact";
 import About from "./components/pages/About";
 import NotFound from "./components/pages/NotFound";
 import Test from "./components/test/Test";
+import EditContact from "./components/contacts/EditContact";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Contacts} />
               <Route exact path="/contact/add" component={AddContact} />
+              <Route exact path="/contact/edit/:id" component={EditContact} />
               <Route exact path="/about" component={About} />
               <Route exact path="/test" component={Test} />
               <Route component={NotFound} />
