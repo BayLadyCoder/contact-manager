@@ -47,6 +47,7 @@ export class Provider extends Component {
       this.setState(state => reducer(state, action));
     }
   };
+
   render() {
     return (
       <Context.Provider value={this.state}>
