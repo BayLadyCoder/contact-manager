@@ -54,7 +54,7 @@ class Contact extends Component {
                   className={showContactInfo ? "fas fa-times" : "fas fa-times"}
                   style={{ cursor: "pointer", float: "right", color: "red" }}
                 ></i>
-                <Link to={`contact/edit/${id}`}>
+                <Link to={`/contact/edit/${id}`}>
                   <i
                     className="fas fa-pencil-alt"
                     style={{
